@@ -19,7 +19,7 @@ def main():
       print("Missing \"failure-domain.beta.kubernetes.io/zone\" label.")
       exit(1)
 
-   zone = et.metadata.labels["failure-domain.beta.kubernetes.io/zone"]
+   zone = ret.metadata.labels["failure-domain.beta.kubernetes.io/zone"]
 
    with open(src_file_path, 'r') as src:
       src_content = src.read()
