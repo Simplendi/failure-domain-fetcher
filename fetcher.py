@@ -8,8 +8,8 @@ def main():
    node_name = os.environ['NODE_NAME']
    src_file_path = os.environ['SRC_FILE_PATH']
    dst_file_path = os.environ['DST_FILE_PATH']
-   
-   config..load_incluster_config()
+
+   config.load_incluster_config()
 
    v1 = client.CoreV1Api()
 
